@@ -41,6 +41,7 @@ nav,#navigation{
     width: 1497px;
     position: fixed;
     top: 0px;
+    font-size: 15px;
 }
 aside{
     background-color:  rgb(237, 223, 27);
@@ -173,5 +174,8 @@ ul{
 .importanttags{
     padding-bottom: 0px;
     margin-bottom: 0px;
+}
+#danda{
+    color: #000;
 }
 
