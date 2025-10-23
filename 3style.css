@@ -1,0 +1,177 @@
+header{
+    background-color: black;
+    color: rgb(237, 223, 27);
+    text-align: center;
+    font-size:85px;
+    width: 1497px;
+    position: fixed;
+    top: 0px;
+    border: 4px white solid;
+    border-bottom:4px white solid;
+}
+#logo{
+    width: 124px;
+    margin-top: 4px;
+   
+    margin-left: 0;
+    padding: 0;
+    text-align: top;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    
+    padding-top: 11px;
+    padding-bottom: 10px;
+    background-color: 000000;
+    border: 0px;
+}
+#sidebar{
+    padding: 0;
+    margin: 0;
+    width: 250px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(237, 223, 27);
+}
+nav,#navigation{
+    text-align: right;
+    background-color: rgb(237, 223, 27);
+    margin: 0;
+    margin-left:2px;
+    margin-top: 96px;
+    width: 1497px;
+    position: fixed;
+    top: 0px;
+}
+aside{
+    background-color:  rgb(237, 223, 27);
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid black;
+    top: 0px;
+    position: fixed;
+    margin-top: 111px;
+    overflow-y: auto;
+    height: 626px;
+    width: 266px;
+    margin-left:4px;
+}
+#parts{
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border: 2px solid black;
+
+}
+#parts:hover{
+    background-color: black;
+    border: 2px black solid;
+    color: rgb(237, 223, 27);
+}
+#navi:hover{
+    background-color: black;
+    border: 2px black solid;
+    color: rgb(237, 223, 27);
+}
+
+section{
+    text-align: right;
+    margin-bottom: 200px;
+    width: 1250px;
+    margin-left: 255px;
+    margin-top: 111px;
+
+    
+}
+h1{
+    background-color: rgb(0, 0, 0);
+    font-size: 60px;
+    color: rgb(237, 223, 27);
+
+    margin-right: 4px;    
+    top: 0;
+    scroll-margin-top: 112px;
+}
+#content{
+    margin-right: 4px; 
+    text-align: justify;
+    margin-left:22px;
+    font-size: 17px;
+}
+a{
+  text-decoration: none;
+  color: black;  
+}
+
+p,figcaption{
+    margin-left: 22px ;
+    margin-right: 4px;
+    text-align: left;
+    font-size: 20px;
+}
+figure{
+    text-align: left;
+    margin-left: 22px;
+    margin-top: 0px;
+    
+}
+img{
+    width: 300px;
+    border: 3px black dotted;
+}
+section{
+    margin-bottom: 0px;
+}
+#thanks{
+    border-top: 50px black solid;
+    border-bottom: 50px black solid;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+#thankyou{
+    border:0px;
+    width: 500px;
+    margin-left: 160px;
+    
+}
+#regard{
+   font-size: 25px;
+   padding-top: 0px;
+   text-align: center;
+}
+#subheading{
+    font-size: 30px;
+    background-color: rgb(237, 223, 27);
+    color: #000;
+}
+code,pre{
+    text-align: left;
+    margin-left: 30px;
+    font-size: 20px;
+    color: rgb(237, 223, 27);
+    background-color: #000;
+    width: fit-content;
+    margin: 0px;
+}
+b{
+    font-size: 20px;
+    color: rgb(237, 223, 27);
+    background-color: #000;
+}
+#basicformattagsinfo{
+    margin-left: 40px;
+}
+td{
+    border: 3px black;
+    border-style: solid;
+}
+ul{
+    margin: 0px;
+    text-align: left;
+    margin-left: 38px;
+    font-size: 20px;
+    padding-left: 0px;
+}
+.importanttags{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
