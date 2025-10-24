@@ -51,7 +51,7 @@ Before we go to learn about HTML we first look at what is web development for a 
    </figure>
    <figcaption>#Last can we imagine a living organism without brain? we can't I think so.So as the brain is important part of body which is responsible for all action taken up by the body th <i>JAVA SCRIPT</i> is a important part of a website which look after all the functioning of a site.</figcaption>
    <figure id="brain"><img src="https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/899569b3-2f28-541f-bc62-bcae70035312/aea87596-f96d-554b-b6b6-3f49ba6ea7ca.jpg" alt="brain"></figure>
-   <p>So we should first of all learn about HTML so that we can easily creat a basic website.We will start with a basic introduction to HTML then we will slowly see about its componet and at last we are also going to have some challenges which you can take up to check your knowledge what you learnt during this whole time.</p>
+   <p>So we should first of all learn about HTML so that we can easily creat a basic website. We will start with a basic introduction to HTML then we will slowly see about its componet and at last we are also going to have some challenges which you can take up to check your knowledge what you learnt during this whole time. Also we will only look on the tags that are used in present not any that has been omitted.</p>
 </p>
 </p>
 </section>
@@ -73,6 +73,7 @@ Before we go to learn about HTML we first look at what is web development for a 
    <p>#HTML is not case sensitive which means we can use both capital as well as small letters with it.</p>
    <p>#There have been several version of html and the latest one is <i>HTML5</i>.</p>
    <p>#HTML can be coded in notepad as well but it is recommended to code in text editor like VScode for better experiance.</p>
+   <p>#HTML doesn't take any extra space or line break unless special tags are used.</p>
    <p>#HTML file is save as name<i>.html</i> or name<i>.htm.</i></p></p>
   </p>
 </section>
@@ -81,7 +82,7 @@ Before we go to learn about HTML we first look at what is web development for a 
     <p id="content">
       <code id="code1"><pre>
    &lt;!doctype&gt;
-      &lt;html&gt;
+      &lt;html lang="en"&gt;
         &lt;head&gt;
             &lt;title&gt;...&lt;/title&gt; 
          &lt;/head&gt;
@@ -91,6 +92,7 @@ Before we go to learn about HTML we first look at what is web development for a 
       &lt;/html&gt;
       </pre>
       </code>
+    
       <p>
          Here you can see various tags used. This all tag are important part of every HTml document and without them any HTML document can't be created.
       </p><br>
@@ -125,34 +127,289 @@ Before we go to learn about HTML we first look at what is web development for a 
             <li><strong>TYPE:-</strong> Container tag.</li>
             <li><strong>ATTRIBUTE:-</strong>
             <strong>BACKGROUND</strong>- It is used to make a image as website background. <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BGCOLOR</strong>- It is used to add color at background. <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>LINKS</strong>- It is used to change color of all the links in the document. <br> 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>VLINK</strong>- It is used to change the color of visited links. <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>ALINK</strong>- It is used to change the color of active links. <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>TEXT</strong>- It is used to change the color of all text in document. <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>TOPMARGIN</strong>- It is used to add some margin from top.  <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>LEFTMARGIN</strong>- It is used to add some margin from left. <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>BGCOLOR</strong>- It is used to add color at background. It takes url of image. <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>LINKS</strong>- It is used to change color of all the links in the document. It takes color name as value. <br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>VLINK</strong>- It is used to change the color of visited links. It takes color name as value.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>ALINK</strong>- It is used to change the color of active links. It takes color name as value.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>TEXT</strong>- It is used to change the color of all text in document.It takes color name as value. <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>TOPMARGIN</strong>- It is used to add some margin from top. It takes pixels as value. <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>LEFTMARGIN</strong>- It is used to add some margin from left. It takes pixels as value. <br>
             In present use of many of this attributes is not recommended as now we use CSS for this purpose. <br>
             If we define different color or margin to other tag inside the body tag, those tags will folllow the defined style.</li>
          </ul>
+         <p>By seeing about the attribute you must be thinking how to use them. You must see at HTML tag of example code I have give earlier it contain lang="en". This is a attribute which have a value. There are certain attributes which don't contain a value and are just written without any = but if a attribute has a value and if the value is of more then 1 word then it must be enclose between "and". </p>
+              
+
+
          </p>
 </p>
     
 </section>
 <section>
     <h1 class="heading" id="SOMEBASICHTMLTAG">SOME BASIC HTML TAG</h1>
+    <p id="content">
+      <p>Besides these tags which are important part of every html document, there are some other tags which are widely used tags in HTML by people and you guys must know about it.</p>
+      <p>This tags are:-</p>
+      <ul>
+         <li><b>&lt;p&gt;</b>- This tag stands for paragraph which is used to show different paragraph section in HTML. <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>TYPE-</strong> Cntainer tag. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>ATTRIBUTE-</strong><i><u>Align </u></i>which contain the value as left, right, center and justified for text inside tag.</li>
+         <li><b>&lt;br&gt;</b>- Its full form is <strong>break</strong>. It is just use to make the text appear in next line. <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>TYPE-</strong> Empty tag.</li>
+         <li><b>&lt;hr&gt;</b>- Its full form is <strong>horizontal rule</strong>. It also break line flow but by using it a additional line appear between the text. <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>TYPE-</strong> Empty tag. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>ATTRIBUTE-</strong><i>Width</i> define the length of the rule. It takes pixels as value. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Size</i> tells how much thick the line must be. It take pixels as value. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Color</i> tells the color of line. It take color as value. <br>
+     
+   </li></ul>
+   <p>INPUT-</p>
+         <code id="code1"><pre>
+   &lt;p&gt;This is a paragraph.This tag stands for <strong>paragraph</strong> which is used to show different paragraph <br>section in HTMl.&lt;/p&gt;
+     The line &lt;br&lt; break.
+     And this is horizontal rule
+     &lt;hr&gt;
+      If we use attribute then
+      &lt;hr width="50px" size="10px" color="yellow" &gt;
+      </pre>
+      </code>
+      <br>
+   <fieldset align="center">
+   <legend font-size="20px"><h2>OUTPUT</h2></legend>
+   <p>This is a paragraph.This tag stands for paragraph which is used to show different paragraph section in HTMl.</p>
+     The line <br> break.
+     And this is horizontal rule
+     <hr>
+      If we use attribute then
+      <hr width="50px" size="10px" color="yellow" >
+</fieldset>
+
+    </p>
 </section>
 <section>
     <h1 class="heading" id="HEADINGSTAG">HEADINGS TAG</h1>
+    <p id="content">In html there are 6 heading tags that range from <strong>h1 to h6</strong> in which h1 is largest heading while h6 is smallest. The deffault size of text is h3.</p>
+    <p>They are container tag.</p>
+    <p>They only have <i>align</i> attribute which take value as left, right or center.</p>
+    <p>Let's see by example </p>
+    <p>INPUT</p>
+             <code id="code1"><pre>
+   &lt;h1&gt;This is largest heading.&lt;/h1&gt;
+   &lt;h2&gt;This is level 2 heading.&lt;/h2&gt;
+   &lt;h3&gt;This is level 3 heading.&lt;/h3&gt;
+   &lt;h4&gt;This is level 4 heading.&lt;/h4&gt;
+   &lt;h5&gt;This is level 5 heading.&lt;/h5&gt;
+   &lt;h6&gt;This is smallest heading.&lt;/h6&gt;
+      </pre>
+      </code>
+      <fieldset align="center">
+        <legend><h2>OUTPUT</h2></legend>
+   <h1 id="neo">This is largest heading.</h1>
+   <h2>This is level 2 heading.</h2>
+   <h3>This is level 3 heading.</h3>
+   <h4>This is level 4 heading.</h4>
+   <h5>This is level 5 heading.</h5>
+   <h6>This is smallest heading heading.</h6>
+      </fieldset>
 </section>
 <section>
    <h1 class="heading" id="HTMLCOMMENTS">HTML COMMENTS </h1>
+   <p id="content">
+      <p>In HTML to display a content that we wanted to display in code but not in final output, we use to place that text inside &lt;!--and--&gt;</p>
+      <p>INPUT</p>
+                   <code id="code1"><pre>
+   &lt;!--This is html comment--&gt;
+   &lt;p&gt;This is paragraph.&lt;/p&gt;
+   &lt;!--This is HTML comment--&gt;
+      </pre>
+      </code>
+   </p>
+   <fieldset align="ceter">
+      <legend>OUTPUT</legend>
+      <!--This is html comment-->
+   <p>This is paragraph.</p>
+   <!--This is HTML comment-->
+   </fieldset>
 </section>
 <section>
    <h1 class="heading" id="SPECIALHTMLENTITIES">SPECIAL HTML ENTITIES</h1>
+   <p id="content">
+     <p>In HTML we cannot write some special symbols like &lt; and &gt; which are widely used in HTML code but when we try to write something like <br>&lt;Tag Name&gt; in our code it doesn't work as the computer doesn't know that we want to show the tag not to use the tag for a specific purpose . Also there are certain sign like yen we wanna to show but there is no key on keyboard that can be use for that purpose. So unless we does't use some <strong>special entities</strong> like <b>&amp;gt (for &gt;)</b> we can't show them.</p>
+   <p>Some of HTML entities are:-</p>
+   <table>
+      <thead><tr>
+         <th>NAME</th>
+         <th>USE FOR</th>
+         <th>SYMBOL</th>
+       
+      </tr></thead><tbody>
+      <tr>
+         <td> <strong>&amp;nbsp;    </strong> </td>
+         <td>Use to leave space</td>
+         <td>&nbsp;</td>
+      
+      </tr>
+      <tr>
+         <td> <strong>&amp;lt;    </strong> </td>
+         <td>Lesser than angle bracket</td>
+         <td>&lt;</td>
+       
+      </tr>
+      <tr>
+         <td> <strong>&amp;gt; </strong> </td>
+         <td>Greater than angle bracket</td>
+         <td>&gt;</td>
+    
+      </tr>
+      <tr>
+         <td>< strong>&amp;amp;    </strong> </td>
+         <td>Ampersand</td>
+         <td>&amp;</td>
+      
+      </tr>
+      <tr>
+         <td><strong>&amp;quot;   </strong></td>
+         <td>Double quoatation mark</td>
+         <td>&quot;</td>
+       
+      </tr>
+      <tr>
+         <td><strong>&amp;apos;   </strong></td>
+         <td>Single quoatation mark</td>
+         <td>&apos;</td>
+      </tr>
+      <tr>
+         <td><strong>&amp;cent;   </strong></td>
+         <td>Cent</td>
+         <td>&cent;</td>
+
+      </tr>
+      <tr>
+         <td><strong>&amp;pound;   </strong></td>
+         <td>Pound</td>
+         <td>&pound;</td>
+         
+      </tr>
+      <tr>
+         <td><strong>&amp;euro;   </strong></td>
+         <td>Euro</td>
+         <td>&euro;</td>
+         
+      </tr>
+      <tr>
+         <td><strong>&amp;yen;   </strong></td>
+         <td>Yen</td>
+         <td>&yen;</td>
+      </tr>
+      <tr>
+         <td><strong>&amp;copy;   </strong></td>
+         <td>Copyright</td>
+         <td>&copy;</td>
+         
+      </tr>
+      <tr>
+         <td><strong>&amp;trade;   </strong></td>
+         <td>Trademark</td>
+         <td>&trade;</td>
+      
+      </tr>
+      <tr>
+         <td><strong>&amp;reg;   </strong></td>
+         <td>Registered trademark</td>
+         <td>&reg;</td>
+         
+      </tr>
+      <tr>
+         <td><strong>&amp;larr;   </strong></td>
+         <td>Left arrow</td>
+         <td>&larr;</td>
+   
+      </tr>
+      <tr>
+         <td><strong>&amp;uarr;   </strong></td>
+         <td>Up arrow</td>
+         <td>&uarr;</td>
+         
+      </tr>
+      <tr>
+         <td><strong>&amp;;rarr;   </strong></td>
+         <td>Right arrow</td>
+         <td>&rarr;</td>
+   
+      </tr>
+      <tr>
+         <td><strong>&amp;;darr;   </strong></td>
+         <td>Down arrow</td>
+         <td>&darr;</td>
+      
+      </tr>
+      <tr>
+         <td><strong>&amp;spades;   </strong></td>
+         <td>Spades</td>
+         <td>&spades;</td>
+      
+      </tr>
+      <tr>
+         <td><strong>&amp;hearts;   </strong></td>
+         <td>Hearts</td>
+         <td>&hearts;</td>
+      
+      </tr>
+      <tr>
+         <td><strong>&amp;clubs;   </strong></td>
+         <td>Clubs</td>
+         <td>&clubs;</td>
+   
+      </tr>
+      <tr>
+         <td><strong>&amp;diams;   </strong></td>
+         <td>Diamond</td>
+         <td>&diams;</td>
+   
+      </tr></tbody>
+   </table>
+   </p>
 </section>
 <section>
    <h1 class="heading" id="FORMATTINGTAGS">FORMATTING TAGS</h1>
+   <p id="content">
+      <p>In HTML formatting tags are the tags that are used to change the font design. This are also called <stong>test style.</strong></p>
+      <p>There are of two types of text style. This are:-</p>
+      <p>#<i><strong>PHYSICAL TEXT STYLE</strong></i> are used to just change the text style. Ex- <b> &lt;b&gt;(use for bold)</b></p>
+      <br>
+      <p>List of some important physical text style are:-</p>
+      <ul>
+         <li><b>&lt;b&gt;</b> which is used to make text <i>bold</i>.</li>
+         <li><b>&lt;i&gt;</b> which is used to make text <i>italic</i>.</li>
+         <li><b>&lt;u&gt;</b> which is used to underline <i>text</i>.</li>
+         <br>
+         <p>INPUT</p>
+                   <code id="code1"><pre>
+   &lt;b&gt;Bold&lt;/b&gt;&lt;br&gt;
+   &lt;i&gt;Italic&lt;i&gt;&lt;br&gt;
+   &lt;u&gt;Underline&lt;/u&gt;&lt;br&gt;
+      </pre>
+      </code> 
+      <fieldset align="center">
+         <legend>OUTPUT</legend>
+      <b id="easybold">Bold</b><br>
+       <i>Italic</i><br>
+       <u>Underline</u><br>
+      </fieldset>        
+      </ul>
+      <p>#<I><STRONG>LOGICAL TEXT STYLE</STRONG></I> are the text style that are used to show a specific meaning to a part of text.Ex- <b>&lt;strong&gt;</b> which make text bold but state that the text has a important meaning.</p>
+   <p>Some of important logical text style are:-</p>
+   <ul>
+      <li><b> &lt;strong&gt;</b> which is used to show that the text has a important meaning.</li>
+      <li><b> &lt;&gt;</b></li>
+      <li><b> &lt;&gt;</b></li>
+      <li><b> &lt;&gt;</b></li>
+      <li><b> &lt;&gt;</b></li>
+      <li><b> &lt;&gt;</b></li>
+      <li><b> &lt;&gt;</b></li>
+      <li><b> &lt;&gt;</b></li>
+   </ul>
+   </p>
 </section>
 <section>
    <h1 class="heading" id="INLINEANDBLOCKSELEMENT">INLINE AND BLOCKS ELEMENT</h1>

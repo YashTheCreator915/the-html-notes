@@ -178,4 +178,23 @@ ul{
 #danda{
     color: #000;
 }
+#neo{
+    font-size:30px;
+    color: #000;
+    background-color: #ffffff;
+}
+table{
+    margin-left: 25px;
+    text-align: center;
+    font-size: 20px;
+}
+th{
+    border: 3px rgb(237, 223, 27) solid;
+    color: rgb(237, 223, 27);
+    background-color: #000;
+}
+#easybold{
+    color: #000;
+    background-color: #ffffff;
+}
 
