@@ -367,6 +367,39 @@ Before we go to learn about HTML we first look at what is web development for a 
          <td><strong>&amp;diams;   </strong></td>
          <td>Diamond</td>
          <td>&diams;</td>
+   <tr><td>&amp;#128507;</td>
+      <td>Mountain</td>
+   <td>&#128507;</td></tr>
+   <tr><td>&amp;#128508;</td>
+      <td>Tokyo tower</td>
+   <td>&#128508;</td></tr>
+   <tr><td>&amp;#128509;</td>
+      <td>Statue of Liberty</td>
+   <td>&#128509;</td></tr>
+	<tr><td>&amp;#128510;</td>
+      <td>Japan</td>
+   <td>&#128510;</td></tr>
+	<tr><td>&amp;#128511;</td>
+      <td>Moyai</td>
+   <td>&#128511;</td></tr>
+	<tr><td>&amp;#128512;</td>
+      <td>Grinning Face</td>
+   <td>&#128512;</td></tr>
+	<tr><td>&amp;#128513;</td>
+      <td>Beaming Face with Smiling Eyes</td>
+   <td>&#128513;</td></tr>
+	<tr><td>&amp;#128514;</td>
+      <td>Face with Tears of Joy</td>
+   <td>&#128514;</td></tr>
+   <tr><td>&amp;#128515;</td>
+      <td>Grinning Face with Big Eyes</td>
+   <td>&#128515;</td></tr>
+	<tr><td>&amp;#128516;</td>
+      <td>Grinning Face with Smiling Eyes</td>
+   <td>&#128516;</td></tr>
+	<tr><td>&amp;#128517;</td>
+      <td>Grinning Face with Sweat</td>
+   <td>&#128517;</td></tr>
    
       </tr></tbody>
    </table>
@@ -402,28 +435,169 @@ Before we go to learn about HTML we first look at what is web development for a 
       <p>#<I><STRONG>LOGICAL TEXT STYLE</STRONG></I> are the text style that are used to show a specific meaning to a part of text.Ex- <b>&lt;strong&gt;</b> which make text bold but state that the text has a important meaning.</p>
    <p>Some of important logical text style are:-</p>
    <ul>
-      <li><b> &lt;strong&gt;</b> which is used to show that the text has a important meaning.</li>
-      <li><b> &lt;&gt;</b></li>
-      <li><b> &lt;&gt;</b></li>
-      <li><b> &lt;&gt;</b></li>
-      <li><b> &lt;&gt;</b></li>
-      <li><b> &lt;&gt;</b></li>
-      <li><b> &lt;&gt;</b></li>
-      <li><b> &lt;&gt;</b></li>
+      <li><b> &lt;strong&gt;</b> used to show that the text has a important meaning. It make text bold.</li>
+      <li><b> &lt;cite&gt;</b> used to show that the text has a important meaning Typically displayed in italic.</li>
+      <li><b> &lt;code&gt;</b> used for computer code. Displayed in fixed width font.</li>
+      <li><b> &lt;em&gt;</b> used to emphasis. Displayed in italic.</li>
+      <li><b> &lt;dfn&gt;</b> used to show word being defined. Displayed in italic.</li>
+      <li><b> &lt;kbd&gt;</b> used for keyboard entry. Displayed in plain fixed-width font.</li>
+      <li><b> &lt;samp&gt;</b> used for sequence of literal characters. Displayed in fixed-width font.</li>
+      <li><b> &lt;var&gt;</b> used for variable, where you will replace the variable with specific information. Displayed in italic.</li>
    </ul>
+   <p>INPUT</p>
+                   <code id="code1"><pre>
+   &lt;strong&gt;It is used to show that the text has a important meaning.&lt;/strong&gt; &lt;br&gt;
+   &lt;cite&gt;It is used to show that the text has a important meaning.&lt;/cite&gt; &lt;br&gt;
+   &lt;em&gt;It is used to emphasis.&lt;/em&gt; &lt;br&gt;
+   &lt;code&gt;It is used for computer code.&lt;/code&gt; &lt;br&gt;
+   &lt;dfn&gt;It is used to show word being defined.&lt;/dfn&gt; &lt;br&gt;
+   &lt;kbd&gt;It is used for keyboard entry.&lt;/kbd&gt; &lt;br&gt;
+   &lt;samp&gt;It is used for sequence of literal characters.&lt;/samp&gt; &lt;br&gt;
+   &lt;var&gt;It is used for variable, where you will replace the variable with specific information.&lt;/var&gt; &lt;br&gt;
+      </pre>
+      </code><br>
+      <fieldset align="center">
+         <legend>OUTPUT</legend>
+   <strong>It is used to show that the text has a important meaning.</strong><br>
+   <cite id="codex">It is used to show that the text has a important meaning.</cite><br>
+   <em id="codex">It is used to emphasis.</em><br>
+   <code id="codex">It is used for computer code.</code><br>
+   <dfn id="codex">It is used to show word being defined.</dfn><br>
+   <kbd id="codex">It is used for keyboard entry.</kbd><br>
+   <samp id="codex">It is used for sequence of literal characters.</samp><br>
+   <var id="codex">It is used for variable, where you will replace the variable with specific information.&lt;</var><br>
+      </fieldset>
    </p>
 </section>
 <section>
    <h1 class="heading" id="INLINEANDBLOCKSELEMENT">INLINE AND BLOCKS ELEMENT</h1>
+   <p id="content">
+      <p>The elementss which occupy just the space they are present in are called  <strong>inline elements</strong>, while the elements which occupy the whole line space and even some margin are called <strong>block elements</strong>.</p>
+      <p>Lets see it by a code example:-</p>
+      <p>INPUT</p>
+      <code id="code1">
+         <pre>
+   &lt;span color="yellow" background-color="black"&gt;This is a inline element.&lt;/span&gt;
+   &lt;div color="black" background color="yellow"&gt;This is a block element.&lt;/div&gt
+         </pre>
+      </code>
+      <fieldset>
+         <legend>OUTPUT</legend>
+         <span color="yellow" background-color="black" id="spanforme">This is a inline element.</span>
+   <div color="black" background color="yellow" id="divforme">This is a block element.</div>
+      </fieldset>
+      <p>Here you can clearly see the difference.</p>
+      <fieldset><legend><b>List of some block element are:-</b></legend>
+   
+<strong>&lt;address&gt; <br>
+&lt;article&gt;<br>
+&lt;aside&gt;<br>
+&lt;blockquote&gt;<br>
+&lt;canvas&gt;<br>
+&lt;dd&gt;<br>
+&lt;div&gt;<br>
+&lt;dl&gt;<br>
+&lt;dt&gt;<br>
+&lt;fieldset&gt;<br>
+&lt;figcaption&gt;<br>
+&lt;figure&gt;<br>
+&lt;footer&gt;<br>
+&lt;form&gt;<br>
+&lt;h1&gt;-&lt;h6&gt;<br>
+&lt;header&gt;<br>
+&lt;hr&gt;<br>
+&lt;li&gt;<br>
+&lt;main&gt;<br>
+&lt;nav&gt;<br>
+&lt;noscript&gt;<br>
+&lt;ol&gt;<br>
+&lt;p&gt;<br>
+&lt;pre&gt;<br>
+&lt;section&gt;<br>
+&lt;table&gt;<br>
+&lt;tfoot&gt;<br>
+&lt;ul&gt;<br>
+&lt;video&gt; </strong></fieldset>
+<fieldset> <br>
+   <legend><b>List of some block elements are:-</b></legend>
+   <strong>&lt;a&gt; <br>
+   &lt;abbr&gt; <br>
+   &lt;acronym&gt; <br>
+   &lt;b&gt; <br>
+   &lt;bdo&gt; <br>
+   &lt;big&gt; <br>
+   &lt;br&gt; <br>
+   &lt;button&gt; <br>
+   &lt;cite&gt; <br>
+   &lt;code&gt; <br>
+   &lt;dfn&gt; <br>
+   &lt;em&gt; <br>
+   &lt;i&gt; <br>
+   &lt;img&gt; <br>
+   &lt;input&gt; <br>
+   &lt;kbd&gt; <br>
+   &lt;label&gt; <br>
+   &lt;map&gt; <br>
+   &lt;object&gt; <br>
+   &lt;output&gt; <br>
+   &lt;q&gt; <br>
+   &lt;samp&gt; <br>
+   &lt;script&gt; <br>
+   &lt;select&gt; <br>
+   &lt;small&gt; <br>
+   &lt;span&gt; <br>
+   &lt;strong&gt; <br>
+   &lt;sub&gt; <br>
+   &lt;sup&gt; <br>
+   &lt;textarea&gt; <br>
+   &lt;time&gt; <br>
+   &lt;tt&gt; <br>
+   &lt;var&gt; </strong>
+</fieldset>
+   </p>
 </section>
 <section>
    <h1 class="heading" id="IDANDCLASSES">ID AND CLASSES</h1>
+   <p id="content"><p>In HTML <strong>id and classes</strong> are the special attributes that can be used with any tag.</p>
+   <p>They are attributes that require a value and has a specific purpose in HTML. Lets talk about purpose of each of them separately.</p>
+   <p>#<b>ID</b>: ID are used to give a unique name to a tag that name can't be used for any other tag in the code. It means we can't give ID we have given to a tag to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;any other tag in code and also only one id can be given to a tag.  <br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One more intresting feature about id is that if you want to give a link to user t another part in site then it is given as <b><i>href</i>=#id of part</b>. You will learn &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;about this later on in linking section.</p>
+<p>
+   #<b>CLASS</b>: Class on other hand can be given to multiple tags as it is used to refer to a group of tags used for a specific purpose. In simple words you can give a class to multiple tags and multiple class to a tag.
+</p>
+<p>
+   *Remember you can give two or more class to tag by just adding space like <b>class="class1 class2"</b> where class1 and class2 are two  different tag, while you can't do this with id as id is unique and each tag can have only one id.
+</p>
+   </p>
 </section>
 <section>
    <h1 class="heading" id="SEMANTICTAGS">SEMANTIC TAGS</h1>
+   <p id="content">
+      <p>In HTML tags which define the user something about the content are called <strong>SEMANTIC TAGS</strong>. This tags are used to make the code appear in more systematic manner</p>
+      <figure><img src="" alt="semantic tags"></figure>
+      <figcaption>This is a image showing how the semantic tags are arrange. Here you can clearly see some important semantic tag like header, footer and main which are widely used in presnt time</figcaption>
+      <p>Semantic tag not only tell people about the code but also help browser to understand it and for same reason you guys must know about this tags. So here is a clear list of semantic tags. </p>
+      <ul>
+         <li><b>&lt;header&gt;</b> is used to define heading of document.</li>
+         <li><b>&lt;footer&gt;</b> is used to define ending of document.</li>
+         <li><b>&lt;main&gt;</b> is used to define the main content of a document.</li>
+         <li><b>&lt;article&gt;</b> is defines a self-contained, independent piece of content like a blog post, news article, or comment.</li>
+         <li><b>&lt;aside&gt;</b> is used to show sidebar in document.</li>
+         <li><b>&lt;figure&gt;</b> is used for images used in document.</li>
+         <li><b>&lt;figcaption&gt;</b> is used to define the information about image</li>
+         <li><b>&lt;section&gt;</b> is used to define different parts of document with a heading and its explanation.</li>
+         <li><b>&lt;nav&gt;</b> is used to define navigation bar.</li>
+         <li><b>&lt;time&gt;</b>	is used to defines a date/time.</li>
+         <li><b>&lt;details&gt;</b>is used to defines additional details that the user can view or hide.</li>
+         <li><b>&lt;mark&gt;</b>is used to defines marked/highlighted text.</li>
+         <li><b>&lt;summary&gt;</b>is used to defines a visible heading for a &lt;details&gt; element.</li>
+      </ul>
+
+   </p>
 </section>
 <section>
    <h1 class="heading" id="HTMLTABLE">HTML TABLE</h1>
+   <P id="content">In HTML tables are one of most easy things to learn.\, so without any delay lets start learning about tables.</P>
 </section>
 <section>
    <h1 class="heading" id="HTMLLIST">HTML LIST</h1>

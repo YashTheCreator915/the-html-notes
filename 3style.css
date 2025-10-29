@@ -197,4 +197,22 @@ th{
     color: #000;
     background-color: #ffffff;
 }
+#codex{
+    font-size: 20px;
+    color: #000;
+    background-color: #ffffff;
+}
+fieldset{
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+#spanforme{
+    color: rgb(237, 223, 27);
+    background-color: #000;
+}
 
+#divforme{
+    color: #000;
+    background-color: rgb(237, 223, 27);
+}
