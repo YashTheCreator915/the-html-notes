@@ -216,3 +216,30 @@ fieldset{
     color: #000;
     background-color: rgb(237, 223, 27);
 }
+#table1{
+    color: #000;
+    background-color: #ffffff;
+    border: 2px #000 solid;
+    text-align: center;
+}
+fieldset{
+    text-align: center;
+    margin-left: 30px;
+}
+#table12{
+    text-align: center;
+    margin-left: 550px;
+}
+#yes{
+    text-align: left;
+    margin-left: 27px;
+    font-size: 20px;
+}
+#table123{
+    text-align: left;
+    margin-left: 500px;
+}
+#table1234{
+    text-align: left;
+    margin-left: 483px;
+}

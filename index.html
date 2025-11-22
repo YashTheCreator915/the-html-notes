@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE HTML</title>
-    <meta name="google-site-verification" content="1IotNLa6su1JozNM6cJ6KeI_85UL6owoL276fTwcRXI" />
-    <meta name="description" content="A collection of notes on HTML by Yash."
+
+    <!-- Page Title -->
+    <title>YG SIR</title>
+
+    <!-- Favicon (your logo) -->
+    <link rel="icon" type="image/png" href="yg.jpg">
+
+    <!-- SEO Description -->
+    <meta name="description" content="YG SIR - The official website with notes and learning content.">
+
+    <!-- Open Graph (Google, WhatsApp, Facebook previews) -->
+    <meta property="og:title" content="YG SIR">
+    <meta property="og:description" content="The official website of YG SIR with helpful notes and resources.">
+    <meta property="og:image" content="yg.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="1IotNLa6su1JozNM6cJ6KeI_85UL6owoL276fTwcRXI">
 </head>
+
 <link rel="stylesheet" href="3style.css">
 <body>
   <logo> <img src="yg.jpg" alt="logo" id="logo"></logo><header>HTML TUTORIAL</header>
@@ -47,7 +64,9 @@
 Before we go to learn about HTML we first look at what is web development for a better clarification.</p>
 <p><strong>Web development refers to building and maintaining a website .Web developers use language like HTML , CSS , JAVA SCRIPT to creat there website.All these languages are widely use with each other to creat a better website.</strong></p>
    <figcaption>#As skeleton support the body the <i>HTML</i> support the website which means it is  the basic support unit of all website which determines what will website contain.  </figcaption>
-  <figure id="skeleton"> <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/28d84d9f-a239-49aa-ab59-0988e89c8d92.png" alt="skeleton"></figure>
+  <figure id="skeleton"> <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/28d84d9f-a239-49aa-ab59-0988e89c8d92.png" alt="skeleton"><?xml version="1.0" encoding="utf-8"?>
+
+</figure>
    <figcaption>#Next take example of body of a boy.As skin and clothes give a person a perfect good and attractive look, we use <i>CSS</i> for this so that the structure of the site can be more attractive to the viewer.This is because html itself has primary purpose to structure the site not to design it. </figcaption>
    <figure id="body"><img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/b907fb34-8c86-4787-98c7-ec4411fb4ae2.png" alt="body">
    </figure>
@@ -165,7 +184,7 @@ Before we go to learn about HTML we first look at what is web development for a 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Color</i> tells the color of line. It take color as value. <br>
      
    </li></ul>
-   <p>INPUT-</p>
+   <p>INPUT</p>
          <code id="code1"><pre>
    &lt;p&gt;This is a paragraph.This tag stands for <strong>paragraph</strong> which is used to show different paragraph <br>section in HTMl.&lt;/p&gt;
      The line &lt;br&lt; break.
@@ -264,7 +283,7 @@ Before we go to learn about HTML we first look at what is web development for a 
     
       </tr>
       <tr>
-         <td>< strong>&amp;amp;    </strong> </td>
+         <td><strong>&amp;amp;    </strong> </td>
          <td>Ampersand</td>
          <td>&amp;</td>
       
@@ -574,7 +593,25 @@ Before we go to learn about HTML we first look at what is web development for a 
    <h1 class="heading" id="SEMANTICTAGS">SEMANTIC TAGS</h1>
    <p id="content">
       <p>In HTML tags which define the user something about the content are called <strong>SEMANTIC TAGS</strong>. This tags are used to make the code appear in more systematic manner</p>
-      <figure><img src="" alt="semantic tags"></figure>
+      <figure><svg width="500" height="420" xmlns="http://www.w3.org/2000/svg" font-family="Arial" style="background-color:black">
+  <rect x="10" y="10" width="480" height="50" fill="yellow" stroke="black" />
+  <text x="250" y="40" fill="black" font-size="18" text-anchor="middle">&lt;header&gt;</text>
+
+  <rect x="10" y="70" width="480" height="40" fill="yellow" stroke="black" />
+  <text x="250" y="95" fill="black" font-size="18" text-anchor="middle">&lt;nav&gt;</text>
+
+  <rect x="10" y="120" width="300" height="130" fill="yellow" stroke="black" />
+  <text x="160" y="150" fill="black" font-size="16" text-anchor="middle">&lt;section&gt;</text>
+
+  <rect x="10" y="260" width="300" height="100" fill="yellow" stroke="black" />
+  <text x="160" y="320" fill="black" font-size="16" text-anchor="middle">&lt;article&gt;</text>
+
+  <rect x="320" y="120" width="170" height="240" fill="yellow" stroke="black" />
+  <text x="405" y="240" fill="black" font-size="18" text-anchor="middle" transform="rotate(90,405,240)">&lt;aside&gt;</text>
+
+  <rect x="10" y="370" width="480" height="40" fill="yellow" stroke="black" />
+  <text x="250" y="398" fill="black" font-size="18" text-anchor="middle">&lt;footer&gt;</text>
+</svg></figure>
       <figcaption>This is a image showing how the semantic tags are arrange. Here you can clearly see some important semantic tag like header, footer and main which are widely used in presnt time</figcaption>
       <p>Semantic tag not only tell people about the code but also help browser to understand it and for same reason you guys must know about this tags. So here is a clear list of semantic tags. </p>
       <ul>
@@ -597,7 +634,272 @@ Before we go to learn about HTML we first look at what is web development for a 
 </section>
 <section>
    <h1 class="heading" id="HTMLTABLE">HTML TABLE</h1>
-   <P id="content">In HTML tables are one of most easy things to learn.\, so without any delay lets start learning about tables.</P>
+   <P id="content"><p>In HTML tables are one of most easy things to learn.\, so without any delay lets start learning about tables.</P>
+   <p>
+      Before studying about table lets first see a code so that we can understand it clearly.
+   </p>
+   <p>INPUT</p>
+   <code id="code1">
+      <pre>
+   &lt;table border="2px" id="table1"&gt;
+      &lt;tr id="table1"&gt;
+         &lt;th id="table1"&gt;1&lt;/th&gt;
+         &lt;th id="table1"&gt;2&lt;/th&gt;
+         &lt;th id="table1"&gt;3&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr id="table1"&gt;
+         &lt;td id="table1"&gt;4&lt;/td&gt;
+         &lt;td id="table1"&gt;5&lt;/td&gt;
+         &lt;td id="table1"&gt;6&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr id="table1"&gt;
+         &lt;td id="table1" colspan="2"&gt;7&lt;/td&gt;
+         &lt;td id="table1"&gt;8&lt;/td&gt;
+      &lt;/tr&gt;
+      &gt;tr id="table1"&gt;
+         &lt;td id="table1" rowspan="2"&gt;9&lt;/td&gt;
+         &lt;td id="table1"&gt;10&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr id="table1"&gt;
+         &lt;td id="table1"&gt;11&lt;/td&gt;
+         &lt;td id="table1"&gt;12&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr id="table1"&gt;
+         &lt;td id="table1"&gt;13&lt;/td&gt;
+         &lt;td id="table1"&gt;14&lt;/td&gt;
+         &lt;td id="table1"&gt;15&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/table&gt;
+      </pre>
+   </code>
+   <fieldset align="centre">
+      <legend>OUTPUT</legend>
+      <table border="2px" id="table12" align="center">
+     <tr id="table1">
+      <th id="table1">1</th>
+      <th id="table1">2</th>
+      <th id="table1">3</th>
+     </tr>
+     <tr id="table1">
+      <td id="table1">4</td>
+      <td id="table1">5</td>
+      <td id="table1">6</td>
+     </tr>
+     <tr id="table1">
+      <td id="table1" colspan="2">7</td>
+      <td id="table1">8</td>   
+     </tr>
+     <tr id="table1">
+      <td id="table1" rowspan="2">9</td>
+      <td id="table1">10</td>
+      
+     </tr>
+     <tr id="table1">
+ 
+      <td id="table1">11</td>
+      <td id="table1">12</td>
+     </tr>
+     <tr id="table1">
+      <td id="table1">13</td>
+      <td id="table1">14</td>
+      <td id="table1">15</td>
+     </tr>
+      </table>
+   </fieldset>
+   <p>Here you can clearly see some of the tags used in table. Its a lengthy topic but easy to understand so lets look at its tags.</p>
+   <Div id="yes"><strong>NOTE-</strong><br>
+   All tags are container tag. 
+   </Div>
+      <p><u><strong>TAGS:-</strong></u></p>
+      <p><b>&lt;table&gt;</b>:- It just mark begining and ending of table<br>
+      <strong>ATTRIBUTE:-</strong><br>
+      <u>Border</u>:it is use to define table border. It take pixel value. <br>
+      <u>Border-color</u>:tell color of border. Take rgb value. (RGB means red green and blue and it take no. value to define different color. Further will be cover in css.) <br>
+      <u>Background</u>:take image url and use to add a image as table background. <br>
+      <u>bgcolor</u>:take rgb value and add a color as background. <br>
+      <u>Color</u>:take rgb value and use to define text color. <br>
+      <u>Align</u>:use to align text in a cell. It take top, left, right, center,bottom. <br>
+      <u>Height</u>:use to give height of table. Take pixel value. <br>
+      <u>Width</u>:use to give width of table. Also take pixel value. <br>
+      <u>Cellspacing</u>:use to specify space between cell. Take pixel value. <br>
+      <u>Cellpadding</u>:use to specify space between cell wall and cell text. Take pixel value.</P>
+      <p>
+         <b>&lt;tr&gt;</b>:- it is use to define a row of table. It generally has same attribute as table. Its full form is table row.
+      </p>
+      <P><b>&lt;th&gt;</b>:- It is same as table row but it is use to define main heading of table. Its full form is is table head.</P>
+      <p>
+         <b>&lt;td&gt;</b>:- it is use to define a single cell in table. (Cell is a box in table.). It has many same tags as table but there are some extra. Its full form is table data. <br>
+         <strong>ATTRIBUTE:-</strong><br>
+         <u>Rowspan</u>:use to merge any two or more cell in row form by which it show only a text in that combined cell and with align 
+          tag it can be specified.It take normal number value as the no. increase it merge more cells but the only condition is that 
+          there must be cells left in other rows so that they can be merge. <br>
+          <u>Colspan</u>:it is same as rowspan but the only difference is that it merge text with different column of same row. <br>
+          <i>You can clearly see this in the example I gave above in no. 9,7. Also you can see that thereis a blank after 10 as i had write nothing for there, this clearly shows that the column always start from left to right. But since it is a important topic i am giving a another example see follow.</i>
+          <p>INPUT</p>
+<code id="code1">
+   <pre>
+   &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td rowspan="4"&gt;7&lt;/td&gt;   
+      &lt;td colspan="2"&gt;8&lt;/td&gt;
+      &lt;td colspan="3"&gt;9&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td colspan="4"&gt;10&lt;/td&gt;
+      &lt;td&gt;11&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td rowspan="2"&gt;12&lt;/td&gt;
+      &lt;td rowspan="3"&gt;13&lt;/td&gt;
+      &lt;td rowspan="2"&gt;14&lt;/td&gt;
+      &lt;td rowspan="3"&gt;15&lt;/td&gt;
+   &lt;td&gt;16&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;16&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;17&lt;/td&gt;
+      &lt;td&gt;18&lt;/td&gt;
+      &lt;td&gt;19&lt;/td&gt;
+      &lt;td&gt;20&lt;/td&gt;
+      &lt;td&gt;21&lt;/td&gt;
+   &lt;/tr&gt;
+   </pre>
+</code>
+      <p><i>:-The code might be complecated for you but this is the best way I can tell you this and once you start linking the code and output you will clearly understand it.</i></p>
+<fieldset>
+   <legend>OUTPUT</legend>
+   <table border="2px" id="table123">
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+   </tr>
+   <tr>
+      <td rowspan="4">7</td>   
+      <td colspan="2">8</td>
+      <td colspan="3">9</td>
+   </tr>
+   <tr>
+      <td colspan="4">10</td>
+      <td>11</td>
+   </tr>
+   <tr>
+      <td rowspan="2">12</td>
+      <td rowspan="3">13</td>
+      <td rowspan="2">14</td>
+      <td rowspan="3">15</td>
+   <td>16</td>
+   </tr>
+   <tr>
+      <td>16</td>
+   </tr>
+   <tr>
+      <td>17</td>
+      <td>18</td>
+      <td>19</td>
+      <td>20</td>
+      <td>21</td>
+   </tr>
+   </table> 
+</fieldset>
+<p><i>:-You just need to focus on the td tags I have no. and that what happen when rowspan and colspan is use to understand diference between the and also notice the space occupy by cell when a certain value is added and the space it occupy is same as that of no. of cells. Also remember to use only limmited no. of td tags so tha it let code look good not like in last line where there was a fault as I added a extra td not focusing on rowspan and colspan.</i></p>
+      </p>
+      <p>Accept this essentials tags there are also 3 tags like semantic tags that are used to define table structure. This are:- <br>
+      <b>&lt;thead&gt;</b>:- <u>Table header</u> is use to define the main heading of table.  <br>
+      <b>&lt;tbody&gt;</b>:- <u>Table body</u> is use to define main body of table <br>
+      <b>&lt;tfoot&gt;</b>:- <u>Table footer</u> is use to define ending of table. <br>
+      <b>&lt;caption&gt;</b>:- This tag is use to give additional information about the table. It is placed just after the starting table tag. <br>
+      Lets see them by a proper example.
+      </p>
+      <p>INPUT</p>
+      <code id="code1">
+<pre>
+   &lt;table border="3px"&gt;
+      &lt;caption&gt; Marks scored by Heena and Yash in maths
+      and english out of 100 with total.&lt;/caption&gt;
+      &lt;thead&gt;
+      &lt;tr&gt;
+         &lt;td&gt;Sno.&lt;/td&gt;
+         &lt;td&gt;Subject&lt;/td&gt;
+         &lt;td&gt;Yash&lt;/td&gt;
+         &lt;td&gt;Heena&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+      &lt;tr&gt;
+         &lt;td&gt;1&lt;/td&gt;
+         &lt;td&gt;Maths&lt;/td&gt;
+         &lt;td&gt;100&lt;/td&gt;
+         &lt;td&gt;10&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+         &lt;td&gt;2&lt;/td&gt;
+         &lt;td&gt;English&lt;/td&gt;
+         &lt;td&gt;100&lt;/td&gt;
+         &lt;td&gt;20&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;/tbody&gt;
+      &lt;tfoot&gt;
+      &lt;tr&gt;
+         &lt;td colspan="2"&gt;Total&lt;/td&gt;
+         &lt;td&gt;200&lt;/td&gt;
+         &lt;td&gt;30&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;/tfoot&gt;
+   &lt;/table&gt;
+</pre>
+      </code>
+      <fieldset>
+         <legend>OUTPUT</legend>
+         <table border="3px" id="table1234">
+      <caption> Marks scored by Heena and Yash in maths
+      and english out of 100 with total.</caption>
+      <thead>
+      <tr>
+         <td>Sno.</td>
+         <td>Subject</td>
+         <td>Yash</td>
+         <td>Heena</td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+         <td>1</td>
+         <td>Maths</td>
+         <td>100</td>
+         <td>10</td>
+      </tr>
+      <tr>
+         <td>2</td>
+         <td>English</td>
+         <td>100</td>
+         <td>20</td>
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+         <td colspan="2">Total</td>
+         <td>200</td>
+         <td>30</td>
+      </tr>
+      </tfoot>
+   </table>
+      </fieldset>
+      <p>Here you can clearly see that caption automatically adjust according to table.</p>
+      <p><i>:- Attribute of thead, tbody and tfoot are align and bgcolor.</i></p>
+   </P>
 </section>
 <section>
    <h1 class="heading" id="HTMLLIST">HTML LIST</h1>
