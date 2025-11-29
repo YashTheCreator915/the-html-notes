@@ -35,7 +35,8 @@
     <a href="#HTMLLIST"><div id="parts">HTML LIST</div></a>
     <a href="#ORDEREDLIST"><div id="parts">ORDERED LIST</div></a>
     <a href="#UNORDEREDLIST"><div id="parts">UNORDERED LIST</div></a>
-    <a href="#DESCRIPTIONLIST"><div id="parts">DESCRIPTION LIST</div></a>
+    <a href="#DEFINITIONLIST"><div id="parts">DEFINITION LIST</div></a>
+    <a href="#NESTEDLIST"><div id="parts">NESTED LIST</div></a>
     <a href="#LINKS"><div id="parts">LINKS</div></a>
     <a href="#IMAGES"><div id="parts">IMAGES </div></a>
     <a href="#MEDIAELEMENT"><div id="parts">MEDIA ELEMENT</div></a>
@@ -43,6 +44,7 @@
     <a href="#AUDIOTAG"><div id="parts">AUDIO TAG</div></a>
     <a href="#IFRAMETAG"><div id="parts">IFRAME TAG</div></a>
     <a href="#HTMLFORMS"><div id="parts">HTML FORMS</div></a>
+    <a href="#SOMEEXTRATAGS"><div id="parts">SOME EXTRA TAGS</div></a>
     <a href="#CHALLENGE1"><div id="parts">CHALLENGE 1</div></a>
     <a href="#CHALLENGE2"><div id="parts">CHALLENGE 2</div></a>
     <a href="#CHALLENGE3"><div id="parts">CHALLENGE 3</div></a>
@@ -894,27 +896,485 @@ Before we go to learn about HTML we first look at what is web development for a 
 </section>
 <section>
    <h1 class="heading" id="HTMLLIST">HTML LIST</h1>
+   <p id="content">
+      <p>List in HTML is one of my most favourite and easiest topic to learn about. In HTML there three types of list we use to study about.</p>
+      <p>We use list to show differet a list item, list of information in a good and proper structure.</p>
+      <p>Let us look at this lists one by one as each of them are different in structure and form in which they are use. At last we will also look at how we combine different list.</p>
+   </p>
 </section>
 <section>
    <h1 class="heading" id="ORDEREDLIST">ORDERED LIST</h1>
+   <p id="content">
+      <p>List use to add a serial number or digit in front of every list item are called <strong>ORDERED LIST OR NUMBERED LIST.</strong></p>
+      <p>I will not go in detail about it as it is easy to understand so let look at its tags.</p>
+      <p><strong>TAGS:-</strong></p>
+      <p><b>&lt;ol&gt;</b>:- this tag mark begining and ending of ordered list. Its is abbreviation of ordered list. <br>
+      <strong>TYPE:-</strong> it is a container tag. <br>
+      <strong>ATTRIBUTE:-</strong> <br>
+      (i)<strong>TYPE-</strong> this attrinbute is use to define what we want to show in front of every list item. Its value are "1, i, I, a, A". Default is 1.<br>
+      (ii)<strong>START-</strong> this attribute is use to tell from which no. we want the list to begin. 
+      </p>
+      <p><i>NOTE:- the bullet in ul and no. in ol are called marker and the list item is called text.</i></p>
+      <p><b>&lt;li&gt;</b>:- this tag is use to define every list item. It generally has no attribute. <br>
+      <strong>TYPE:-</strong> it is not of any type as it can be use in both form because every list item between two &lt;li&gt; or &lt;li&gt; and &lt;/li&gt; are considered as seperate list item.</p>
+      <p>Let us see it by an example</p>
+      <p>INPUT</p>
+      <code id="code1">
+<pre>
+   &lt;ol&gt;
+      &lt;li&gt;item1&lt;/li&gt;
+      &lt;li&gt;item2&lt;/li&gt;
+   &lt;/ol&gt;
+   &lt;ol start="3"&gt;
+      &lt;li&gt;item3&lt;/li&gt;
+      &lt;li&gt;item4&lt;/li&gt;
+   &lt;/ol&gt;
+   &lt;ol type="i"&gt;
+      &lt;li&gt;item5&lt;/li&gt;
+      &lt;li&gt;item6&lt;/li&gt;
+   &lt;/ol&gt;
+   &lt;ol type="i" start="4"&gt;
+      &lt;li&gt;item7&lt;/li&gt;
+      &lt;li&gt;item8&lt;/li&gt;
+   &lt;/ol&gt;
+   &lt;ol type="a"&gt;
+      &lt;li&gt;item9&lt;/li&gt;
+      &lt;li&gt;item10&lt;/li&gt;
+   &lt;/ol&gt;
+   &lt;ol type="a" start="6"&gt;
+      &lt;li&gt;item11&lt;/li&gt;
+      &lt;li&gt;item12&lt;/li&gt;
+   &lt;/ol&gt;
+   &lt;ol type="I"&gt;
+      &lt;li&gt;item13&lt;/li&gt;
+      &lt;li&gt;item14&lt;/li&gt;
+   &lt;/ol&gt;
+   &lt;ol type="I" start="2"&gt;
+      &lt;li&gt;item15&lt;/li&gt;
+      &lt;li&gt;item16&lt;/li&gt;
+   &lt;/ol&gt;
+   &lt;ol type="A"&gt;
+      &lt;li&gt;item17
+      &lt;li&gt;item18
+   &lt;/ol&gt;
+   &lt;ol type="A" start="7"&gt;
+      &lt;li&gt;item19
+      &lt;li&gt;item20
+   &lt;/ol&gt;
+</pre>
+      </code>
+      <fieldset>
+         <legend>OUTPUT</legend>
+         <ol class="centered">
+      <li>item1</li>
+      <li>item2</li>
+   </ol>
+   <ol start="3" class="centered">
+      <li>item3</li>
+      <li>item4</li>
+   </ol>
+   <ol type="i" class="centered">
+      <li>item5</li>
+      <li>item6</li>
+   </ol>
+   <ol type="i" start="4" class="centered">
+      <li>item7</li>
+      <li>item8</li>
+   </ol>
+   <ol type="a" class="centered">
+      <li>item9</li>
+      <li>item10</li>
+   </ol>
+   <ol type="a" start="6" class="centered">
+      <li>item11</li>
+      <li>item12</li>
+   </ol>
+   <ol type="I" class="centered">
+      <li>item13</li>
+      <li>item14</li>
+   </ol>
+   <ol type="I" start="2" class="centered">
+      <li>item15</li>
+      <li>item16</li>
+   </ol>
+   <ol type="A" class="centered">
+      <li>item17
+      <li>item18
+   </ol>
+   <ol type="A" start="7" class="centered">
+      <li>item19
+      <li>item20
+   </ol>
+      </fieldset>
+   </p>
 </section>
 <section>
    <h1 class="heading" id="UNORDEREDLIST">UNORDERED LIST</h1>
+   <p id="content">
+      <p>List use to add a bullet in front of every list item are called <strong>UNORDERED LIST OR UNNUMBERED LIST.</strong></p>
+      <p><strong>TAGS:-</strong></p>
+      <p><b>&lt;ul&gt;</b>:- this tag mark begining and ending of unordered list. Its is abbreviation of unordered list. <br>
+      <strong>TYPE:-</strong> it is a container tag. <br>
+      <strong>ATTRIBUTE:-</strong> <br>
+      (i)<strong>TYPE-</strong> this attrinbute is use to define what we want to show in front of every list item. Its value are "disc, circle, square, rest we will see how to add with help of css". Default is disc.<br>
+      </p>
+      <p><b>&lt;li&gt;</b>:- it is same as earlier. <br>
+      <p>Let us see it by an example</p>
+      <p>INPUT</p>
+      <code id="code1">
+<pre>
+   &lt;ul&gt;
+      &lt;li&gt;item1&lt;/li&gt;
+      &lt;li&gt;item2&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;ul type="square"&gt;
+      &lt;li&gt;item3&lt;/li&gt;
+      &lt;li&gt;item4&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;ul type="circle"&gt;
+      &lt;li&gt;item5&lt;/li&gt;
+      &lt;li&gt;item6&lt;/li&gt;
+   &lt;/ul&gt;
+</pre>
+ </code>
+ <fieldset>
+    <legend>OUTPUT</legend>
+     <ul class="center">
+      <li>item1</li>
+      <li>item2</li>
+   </ul>
+   <ul type="square" class="center">
+      <li>item3</li>
+      <li>item4</li>
+   </ul>
+   <ul type="circle" class="center">
+      <li>item5</li>
+      <li>item6</li>
+   </ul>
+ </fieldset>
+   </p>
 </section>
 <section>
-   <h1 class="heading" id="DESCRIPTIONLIST">DESCRIPTION LIST</h1>
+   <h1 class="heading" id="DEFINITIONLIST">DEFINITION LIST</h1>
+   <p id="content">
+      <p>Definition list is use to show items in form of term and its definition. Let us look at its tags and at last a example code.</p>
+      <p><i>:-They has same attributes as body tag.</i></p>
+      <p><strong>TAGS:-</strong></p>
+      <p><b>&lt;dl&gt;</b>- <i>DEFINITION LIST</i> tag is use to start and end definitin lost.<br>
+      <strong>TYPE:-</strong> container tag.</p>
+      <p><b>&lt;dt&gt;</b>- <i>DEFINITION TERM</i> tag is use to show term aout what definition is.<br>
+      <strong>TYPE:-</strong> empty tag.</p>
+      <p><b>&lt;dd&gt;</b>- <i>DEFINITION DESCRIPTION</i> tag is use to add description of the term.<br>
+      <strong>TYPE:-</strong> empty tag.</p>
+      <p>INPUT</p>
+      <code id="code1">
+<pre>
+   &lt;dl&gt;
+      &lt;dt&gt;THE TERM ONE 
+         &lt;dd&gt; THE DEFINITION ONE
+      &lt;dt&gt;THE TERM TWO
+         &lt;dd&gt; THE DEFINITION TWO
+   &lt;/dl&gt;
+</pre>
+      </code>
+      <fieldset>
+         <legend>OUTPUT</legend>
+   <dl align="left">
+      <dt>THE TERM ONE 
+         <dd> THE DEFINITION ONE
+      <dt>THE TERM TWO
+         <dd> THE DEFINITION TWO
+   </dl>
+      </fieldset>
+   </p>
+</section>
+<section>
+   <h1 class="heading" id="NESTEDLIST">NESTED LIST</h1>
+   <p id="content">
+      <p>NESTED LIST is nothing new it just mean combine different list. INstead of providing a long description let me show you it with some a example so that you can understand it clearly. </p>
+      <code id="code1">
+<pre>
+   EXAMPLE 1
+   &lt;ul&gt;
+      &lt;li&gt;States
+            &lt;ul type="circle"&gt;
+                &lt;li&gt;Haryana
+                &lt;li&gt;Odissa
+             &lt;/ul&gt;
+      &lt;li&gt;Union territories
+            &lt;ul type="circle"&gt;
+                &lt;li&gt;Ladakh
+                &lt;li&gt;Delh
+             &lt;/ul&gt;
+   &lt;/ul&gt;
+   EXAMPLE 2
+   &lt;ol&gt;
+      &lt;li&gt;States&lt;/li&gt;
+            &lt;ol type="i"&gt;
+                &lt;li&gt;Haryana&lt;/li&gt;
+                &lt;li&gt;Odissa&lt;/li&gt;
+             &lt;/ol&gt;
+      &lt;li&gt;Union territories&lt;/li&gt;
+            &lt;ol type="i"&gt;
+                &lt;li&gt;Ladakh&lt;/li&gt;
+                &lt;li&gt;Delhi&lt;/li&gt;
+             &lt;/ol&gt;
+   &lt;/ol&gt;
+   EXAMPLE 3
+   &lt;ul&gt;
+      &lt;li&gt;States
+            &lt;ol&gt;
+                &lt;li&gt;Haryana&lt;/li&gt;
+                &lt;li&gt;Odissa&lt;/li&gt;
+             &lt;/ol&gt;
+      &lt;li&gt;Union territories
+            &lt;ol&gt;
+                &lt;li&gt;Ladakh&lt;/li&gt;
+                &lt;li&gt;Delhi&lt;/li&gt;
+             &lt;/ol&gt;
+   &lt;/ul&gt;
+</pre>
+      </code>
+      <fieldset>
+         <legend>OUTPUT</legend>
+         EXAMPLE 1
+   <ul class="list2">
+      <li>States
+            <ul type="circle">
+                <li>Haryana
+                <li>Odissa
+             </ul>
+      <li>Union territories
+            <ul type="circle">
+                <li>Ladakh
+                <li>Delh
+             </ul>
+   </ul>
+   <hr>
+   EXAMPLE 2
+   <ol class="list2">
+      <li>States</li>
+            <ol type="i">
+                <li>Haryana</li>
+                <li>Odissa</li>
+             </ol>
+      <li>Union territories</li>
+            <ol type="i">
+                <li>Ladakh</li>
+                <li>Delhi</li>
+             </ol>
+   </ol>
+   <hr>
+   EXAMPLE 3
+   <ul class="list2">
+      <li>States
+            <ol>
+                <li>Haryana</li>
+                <li>Odissa</li>
+             </ol>
+      <li>Union territories
+            <ol>
+                <li>Ladakh</li>
+                <li>Delhi</li>
+             </ol>
+   </ul>
+      </fieldset>
+   </p>
 </section>
 <section>
    <h1 class="heading" id="LINKS">LINKS</h1>
+   <p id="content">
+      <p>Linking just mean to link different pages or site or different section of same site together.</p>
+      <p>We use <strong>anchor tag</strong> (<b>&lt;a&gt;</b>) for linking purpose. Some of important information about it are:-</p>
+      <P>It is a container <strong>tag</strong> and text appear between its starting and ending tag is seen as link.</P>
+      <p><strong>ATTRIBUTES</strong><br>
+      # <strong>href</strong> it is main attribute of anchor tag that contain the url of part we wanna to link. <br>
+      # <strong>target</strong> this attribute is use to show where the url or linked document will be displayed when link is clicked. <br>
+      Some of its value are:-</p>
+      <ul>
+         <li>self: Opens link in the same current tab (default).</li>
+         <li>blank: Opens link in a new tab or window.</li>
+         <li>parent: Opens link in the immediate parent frame.</li>
+         <li>top: Opens link in the absolute full window, overriding frames.</li>
+         <li>framename: Opens link in a designated, named frame.</li>
+      </ul>
+      <p>In HTML we can link any sites or section of same site together in two ways</p>
+      <p><strong>INTERNAL LINKING</strong> internal linking refers to linking two or more section of same site or diferent pages of same site. This is also called <strong>relative linking</strong>. (no need tto specify target)<br></p>
+      <p>There are two ways in internal linking. This are:- <br>
+      <strong>Two or more section of same site</strong>- if you look at side bar of this site you will notice that when you click at any of the button for a section, that section appear in front of you. To do this you just have to mention (href="#idofsection"). <br>
+      <strong>Two or more page of a site</strong>- to add multiple page in a site you just need to mention it's name in href if in same folder (recommended)or if the page lie in a different folder then you need to just writes its url in href.</p>
+      <p><strong>EXAMPLE</strong></p>
+      <p>INPUT</p>
+      <code id="code1">
+<pre>
+   &lt;a href="#id"&gt;IMAGES (SECTION OF SAME SITE) &lt;/a&gt;
+   &lt;a href="name.html"&gt;Different pages of same site(here I don't have taken any other page so link wouldn't work)&lt;/a&gt;
+</pre>
+      </code>
+      <fieldset>
+         <legend>OUTPUT</legend>
+            <a href="#IMAGES" id="a">IMAGES (SECTION OF SAME SITE)</a> <br>
+   <a href="name.html" id="a">Different pages of same site(here I don't have taken any other site)</a>
+      </fieldset>
+      <p><strong>EXTERNAL LINKING</strong> external linking refers to linking two or more different sites. It is also called <strong>absolute linking</strong>. You just need to specify the original url of site you are connecting in href.</p>
+      <p>INPUT</p>
+            <code id="code1">
+<pre>
+   &lt;a href="https://www.google.com" target="_blank"&gt;GOOGLE&lt;/a&gt;
+</pre>
+      </code>
+
+   <fieldset>
+      <legend>OUTPUT</legend>
+      <a href="https://www.google.com" target="_blank" id="a">GOOGLE</a>
+   </fieldset>
+   <p>(<i>NORMALLY TEXT IN A TAG APPEAR IN BLUE WITH A BLUE UNDERLINE</i>).</p>
+      </p>
 </section>
 <section>
   <h1 class="heading" id="IMAGES">IMAGES</h1>
+  <p id="content">
+   <p>Learning how to add images to your code not only make them beautiful but also more informative to look at. So let us see how we can add images to our code. </p>
+   <p>We use <b>&lt;img&gt;</b> tag to add image in our code. </p>
+   <p> It is a <strong>empty tag</strong>.</p>
+   <p>It is a inline tag and remain in line flow</p>
+   <p> It mostly work with 4 attribute, let us see at them. <br>
+   #<strong>Width</strong>:- it is just use to define width of image. It take pixel value.<br>
+   #<strong>Height</strong>:- it is just use to define height of image. It take pixel value. (<i>If you use a code editor then us only one of two as it make image adjust automatically and adding a additional infor,ation will make image look worse in size matter.</i>)<br>
+   #<strong>Src</strong>:- in this attribute you specify image url.(must use)<br>
+   #<strong>Alt</strong>:- it contain the name of image as in case if image is not shown, the text written in it appear along with image icon.</p>
+ <p>INPUT</p>
+  <code id="code1">
+<pre>
+    &lt;img src="url" alt="THE LOGO" width="50px"&gt;
+</pre>
+  </code>
+  <fieldset>
+   <legend>OUTPUT</legend>
+        <img src="yg.jpg" alt="THE LOGO" width="50px">
+  </fieldset>
+  <p>In general when we can add a image to our code by three ways. This are:- <br>
+   <ul>
+      <li><strong>FROM BROWSER</strong>:- to add a image from browser you just need to copy the image link by right clicking at it and paste it to the href of img tag. <i>CAUTION</i> always take permission or mention the source from where you have take the image as if you just copy it, it will be considered as plagiarism./li>
+      <li><strong>FROM ANOTHER FOLDER OF YOUR COMPUTER</strong>:- to add a image a image from another folder you just need to copy image as path. Just keep in mind that you have mention exact image type is mention in last as .jpg (I have taken example of jpg here ).</li>
+      <li><strong>FROM SAME FOLDER</strong>:- this most easiest and recommended way to add a image in document as you just need to write down the name of the image you wanna to add.</li>
+</ul>
+</p>
+<p>Thus this whole is just about image I think it is not much important but just a side knowledge about forms of images. <br>
+<ul>
+   <li>JPG - Best for photos, small size, no transparency.</li>
+   <li>PNG - High quality, supports transparency, larger size.</li>
+   <li>GIF - Supports simple animations, limited colors.</li>
+   <li>SVG - Vector graphics, scales perfectly, tiny file size.</li>
+   <li>WebP - Modern, small size, supports transparency & animation.</li>
+   <li>AVIF - Excellent compression, high quality, supports transparency.</li>
+   <li>BMP - Uncompressed bitmap, very large, rarely used.</li>
+   <li>APNG - Animated PNG with high-quality transparency.</li>
+   <li>ICO - Icon format mainly for favicons.</li>
+</ul></p>
+</p>  
 </section>
 <section>
   <h1 class="heading" id="MEDIAELEMENT">MEDIA ELEMENT</h1>
+  <P id="content"><p>In HTML to add items like video or audios in our document we use some of the special tags which we are going to see how we caan do this in the upcoming sectin.</p>
+  </P>
 </section>
 <section>
    <h1 class="heading" id="VIDEOTAG">VIDEO TAG</h1>
+   <p id="cotent">
+      <p>There are generally three ways in which you can embed video in your site. This are:-</p>
+      <p># <b>&lt;Iframe&gt;</b> this tag is generally use to add a video or part of site in our document within a limited area. We will study about it later on.</p>
+      <p># <b>&lt;video&gt;</b> this tag is widely use to add videos in HTML document. It is a container tag (if video is not supported by browser text between starting and ending tag accept source tag will be shown). It contain following attributes:-</p>
+      <ul>
+         <li><strong>src</strong> this tag contain the url of the video we want to embed in our document. However we can specify only only video through this tag. Spacifying url in video is same as in image.</li>
+         <li><strong>width</strong>this tag is use to define width of video.</li>
+         <li><strong>height</strong>this tag is use to define height of video. (it is recommended to define only one of two in code editors).</li>
+         <li><strong>muted</strong> this make  video start muted.</li>
+         <li><strong>controls</strong> this tag is use to add controls in video.</li>
+         <li><strong>autoplay</strong> this tag is use to start the video automatically when site is open.</li>
+         <li><strong>loop</strong> this tag is use to make video start again and again when video end.</li>
+         <li><strong>poster</strong> this tag is use to add a poster to video if we want to.</li>
+         <li><strong>playsinlinet tells mobile browsers to play the video inside the</strong></li>
+      </ul>
+      <p>EXAMPLE</p>
+      <p>INPUT</p>
+      <code id="code1">
+<pre>
+   &lt;video src="video.mp4" height="500px"&gt;
+   video1
+   &lt;/video&gt; <br>
+   &lt;video src="video.mp4" height="500px" autoplay&gt;
+   video2
+   &lt;/video&gt; <br>
+   &lt;video src="video.mp4" height="500px" controls &gt;
+   video3
+   &lt;/video&gt;  <br>
+   &lt;video src="video.mp4" height="500px" controls loop muted&gt;
+   video4
+   &lt;/video&gt; <br>
+   &lt;video src="video.mp4" height="500px" autoplay controls&gt;
+   video5
+   &lt;/video&gt; 
+   &lt;video src="video.mp4" height="500px" autoplay muted&gt;
+   video6
+   &lt;/video&gt;
+   &lt;video src="sample.mp4" height="500px" poster="logo.jpg" controls&gt;
+      video7
+   &lt;/video&gt; 
+</pre>
+      </code>
+      <fieldset>
+         <legend>
+            OUTPUT
+         </legend>
+          <video src="sample.mp4" height="500px">
+   video1
+   </video> <br>
+
+   <video src="sample.mp4" height="500px" autoplay>
+   video2
+   </video> <br>
+
+   <video src="sample.mp4" height="500px" controls>
+   video3
+   </video>  <br>
+
+   <video src="sample.mp4" height="500px" controls loop muted>
+   video4
+   </video> <br>
+
+   <video src="sample.mp4" height="500px" autoplay controls>
+   video5
+   </video> <br>
+   <video src="sample.mp4" height="500px" autoplay muted>
+     video6
+   </video>
+   <video src="sample.mp4" height="500px" poster="yg.jpg" controls>
+      video7
+   </video>
+      </fieldset>
+      <p><strong>Observation</strong></p>
+      <ul type="circle">
+         <li>video will not play if you add only autoplay without muted or do not add controls.</li>
+         <li>always add muted with autoplay.</li>
+         <li>do not use controls and autoplay together</li>
+         <li>you can use loop and muted with both autoplay and controls</li>
+         <li>don't add autoplay with poster as it will make poster disappear as soon as site is loaded.</li>
+      </ul>
+      <p># <b>&lt;source&gt;</b> with video tag:- by using source tag you can can add url of multiple video so that if a video is not showing then the othere video will appear and if all video are not supported then text accept source tag will appear. It is a empty tag.</p>
+      <p>ATTRIBUTE:-</p>
+      <p><strong>src</strong> it is same as earier.</p>
+      <p><srong>type</strong> use to define type of video</p>
+         <ul></ul>
+      <p>INPUT</p>
+      <code id="code1">
+<pre>
+   &lt;video height="500px"&gt;
+   &lt;source src="video.mp4"&gt;
+   &lt;/video&gt;
+</pre>
+      </code>
+   </p>
 </section>
 <section>
    <h1 class="heading" id="AUDIO TAG">AUDIO TAG</h1>
@@ -926,6 +1386,9 @@ Before we go to learn about HTML we first look at what is web development for a 
    <h1 class="heading" id="HTMLFORMS">HTML FORMS</h1>
 </section>
 <section>
+   <h1 class="heading" id="SOMEEXTRATAGS">SOME EXTRA TAGS</h1>
+</section>
+<section>
    <h1 class="heading" id="CHALLENGE1">CHALLENGE 1</h1>
 </section>
 <section>
@@ -933,7 +1396,9 @@ Before we go to learn about HTML we first look at what is web development for a 
 </section>
 <section>
    <h1 class="heading" id="CHALLENGE3">CHALLENGE 3</h1></a>
+
 </section>
+
 <footer>
 <section id="thanks">
    <figure ><img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/31611c19-b278-440c-bf2b-e7060ebe825d.png" alt="thankyou" id="thankyou"></figure>
@@ -942,9 +1407,12 @@ Before we go to learn about HTML we first look at what is web development for a 
    your html journey <br>
    I hope it would have helped you a lot <br>
    to learn about html and had awaken a <br>
-   great future coder in you
+   great future coder in you and <br>
+   remember that there is nothing <br>
+   anyone can teach you unless you try
    </i></figcaption>
 </section></footer>
+
 
 <script>
   window.onbeforeunload = function () {

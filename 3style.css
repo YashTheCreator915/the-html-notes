@@ -8,6 +8,7 @@ header{
     top: 0px;
     border: 4px white solid;
     border-bottom:4px white solid;
+    z-index: 9;
 }
 #logo{
     width: 124px;
@@ -16,7 +17,7 @@ header{
     margin-left: 0;
     padding: 0;
     text-align: top;
-    z-index: 1;
+    z-index: 100;
     position: fixed;
     top: 0px;
     
@@ -42,6 +43,7 @@ nav,#navigation{
     position: fixed;
     top: 0px;
     font-size: 15px;
+    z-index: 10;
 }
 aside{
     background-color:  rgb(237, 223, 27);
@@ -242,4 +244,23 @@ fieldset{
 #table1234{
     text-align: left;
     margin-left: 483px;
+}
+.centered{
+   margin-right: 35px;
+     list-style-position: inside;
+}
+.center{
+    text-align: center;
+    list-style-position: inside;
+    margin-right: 35px;
+}
+.list2{
+    text-align: left;
+}
+#a{
+    color: yellow;
+    text-decoration: underline yellow ;
+}
+video{
+    z-index: 1;
 }
